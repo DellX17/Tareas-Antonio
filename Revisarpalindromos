@@ -17,12 +17,12 @@ int main(){
     
     for(i=0;i < length ;i++){
         if(string1[i] != string1[length-i-1]){
-            flag = 1;
+            check = 1;
             break;
    }
 }
     
-    if (flag) {
+    if (check) {
         printf("%s No es un palindromo", string1);
     }    
     else {
