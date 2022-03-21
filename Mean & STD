@@ -1,0 +1,50 @@
+//
+//  Aarón Aguilar
+//  
+//  Media y varianza
+//  
+//  20.03.2022
+
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int tam;
+float tmp;
+
+float varianza, media, ds;
+int
+main ()
+{
+  cout << "Tamaño del vector" << endl;
+  cin >> tam;
+  float vect[tam];
+  for (int i = 0; i < tam; i++)
+    {
+      tmp = random () % 1001;	// genera numeros aleatorios entre 0 y 1000
+      tmp = tmp - 500;		// escalo -500 to 500
+      tmp = tmp / 500;		// escalo -1  to 1
+      vect[i] = tmp;
+    }
+  cout << "Datos generados: " << endl;
+  for (int i = 0; i < tam; i++)
+    {
+      cout << vect[i] << " ";
+    }
+  cout << endl;
+  for (int i = 0; i < tam; i++)
+    {
+      media += vect[i];
+    }
+  media = media / tam;
+  for (int i = 0; i < tam; i++)
+    {
+      varianza = varianza + pow ((vect[i] - media), 2);
+    }
+  ds = sqrt (varianza / (tam - 1));
+  cout << "Valor medio: " << media << endl;
+  cout << "Desviación estándar: " << ds << endl;
+  return 0;
+}
