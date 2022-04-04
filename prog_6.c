@@ -19,4 +19,5 @@ int main()
 	str[1]="Y";
   while (str[i])
     printf ("%d ", str[i++]);
+	return 0;
 }
