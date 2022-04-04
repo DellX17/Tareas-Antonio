@@ -1,7 +1,7 @@
 //
 //  Aarón Aguilar
 //  
-//  Media y varianza
+//  Punto 1 tarea 6
 //  
 //  03.04.2022
 #include <stdio.h>
