@@ -13,7 +13,7 @@ char password[]="calor";
 int i,s;
 s=0;
 for(i=0; i<5; i++){
-s = s + cad[i]-password[i];
+s = s + abs(cad[i]-password[i]);
 }
 return s;
 }
